@@ -1,0 +1,70 @@
+<html  >
+  <head>
+  <meta charset="utf-8"/>
+  <title> my application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  
+<body ng-app="MyApp" >
+
+<div class="navbar navbar-default">
+		
+			<ul class="nav navbar-nav">
+				<li ><a ui-sref="departement">gestion des departements</a></li>
+				<li ><a ui-sref="pole">gestion des poles</a></li>
+				<li ><a ui-sref="user">gestion des utilisateurs</a></li>
+				<li ><a ui-sref="demande">gestion des demandes</a></li>
+				
+			</ul>
+		</div>
+		
+<div  class="col-md-6 col-xs-12 col-md-offset-3">
+<div class="panel panel-default ">
+<div>saisie d'un utilisateur</div>
+<div class="panel-body">
+<form  method="post" >
+<div class="form-group">
+<label class="conrol-label">Name:</label>
+<input type="text"  class="form-control" ng-model="UserName"/>
+</div>
+<div class="form-group">
+<label class="conrol-label">Lastname:</label>
+<input type="text"  class="form-control" ng-model="UserLastname"/>
+</div>
+<div class="form-group" >
+<label class="conrol-label">Email:</label>
+<input type="text"  class="form-control" ng-model="UserEmail"/>
+</div>
+<div class="form-group">
+<label class="conrol-label">Date d'embauche:</label>
+<input type="date"  class="form-control" ng-model="UserDate_embauche"/>
+</div>
+<div class="form-group">
+<label class="conrol-label">Solde:</label>
+<input type="text"  class="form-control" ng-model="Usersolde"/>
+</div>
+<div class="form-group">
+<label class="conrol-label">Niveau:</label>
+<input type="text"  class="form-control" ng-model="Userniveau"/>
+</div>
+<div><button ng-click="addUser()" class="btn-panel-big">Add New Task</button></div>
+
+
+</form>
+</div>
+</div>
+</div>
+
+
+
+<script type="text/javascript"   src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript"   src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
